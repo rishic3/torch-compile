@@ -1,5 +1,7 @@
 import torch
 
+# TORCH_LOGS=graph_code python dynamo.py
+
 @torch.compile
 def mse(x, y):
     z = (x - y) ** 2
